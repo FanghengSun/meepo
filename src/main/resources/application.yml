@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: passworde
+    schema: classpath:db/init-user.sql
+    data: classpath:db/user.sql
+  h2:
+    console:
+      enabled: true
+
+mybatis-plus:
+  type-aliases-package: com.fangheng.meepo.entity
+  configuration:
+    map-underscore-to-camel-case: true
+
+# Logger Config
+logging:
+  level:
+    com.fangheng.meepo: debug

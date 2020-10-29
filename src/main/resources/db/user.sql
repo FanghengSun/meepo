@@ -1,0 +1,1 @@
+insert into `USER` (`USER_ID`, `USER_NAME`, `PASSWORD`, `EMAIL`, `PHONE`, `FULL_NAME`) values (0, '小明', '12345', 'dd@hly.com', '18818881818', '王小明');
